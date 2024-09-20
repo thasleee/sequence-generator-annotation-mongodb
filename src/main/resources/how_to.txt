@@ -1,0 +1,16 @@
+Sequence generator annotation for MongoDB database
+
+* GenerateSequence - Create the @interface type with whatever the fields you want. This will act as the
+annotation for out project
+For this, Target is set to fields because our aim is to apply this annotation on fields and Retention is set to Runtime, so the
+decision is taken only on runtime.
+* Create an entity class (here document class) to represent the sequential data and to keep track of it (Here, it is DatabaseSequence)
+* Create a GenerateSequenceService to interact with the sequence collection to dynamically create and update
+sequence collection
+* Now create annotation processor which will, fetch the fields of GenerateSequence annotation and process
+them before converting the model object into mongodb document (Here, model object is customer)
+
+I hope this will be useful for people who are learning spring boot and mongodb and for some experienced developers too.
+Try implementing in your projects.
+
+Have fun!

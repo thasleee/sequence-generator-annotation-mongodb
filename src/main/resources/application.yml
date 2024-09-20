@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: sequence-generator-annotation-mongodb
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/sequence-generator # I have taken default path for the mongodb database
